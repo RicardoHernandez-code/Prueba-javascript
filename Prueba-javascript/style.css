@@ -1,0 +1,175 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+	
+	background-image: url('https://bit.ly/2REl2Xb');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+/*elementos*/
+
+.inputProducto{
+	width: 267px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: rgba(255,255,255,0.7);
+	border-color: transparent;
+	transition-duration: 2s;
+}
+
+.inputProducto:hover{
+	transition-duration: 0.2s;
+	background-color: rgba(255,255,255,1);
+}
+
+select{
+	border-color: transparent;
+	background-color: rgba(255,255,255,0.7);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 267px;
+}
+
+.tituloProducto{
+	font-size: 25px;
+	color: white;
+}
+
+.anadirCarrito{
+	transition-duration: 0.3s;
+	background-color: rgba(46, 227, 102,0.7);
+	font-size: 19px;
+	margin-top: 10px;
+	border-color: transparent;
+	padding: 6px;
+}
+
+.anadirCarrito:hover{
+	transition-duration: 0.3s;
+	letter-spacing: 0.2px;
+	background-color: rgba(46, 227, 102,1);
+
+}
+
+
+
+/* Area principal */
+
+#areaPrincipal{
+	height: 100%;
+	margin-bottom: 100px;
+}
+
+#header{
+	margin-top: 15px;
+}
+
+
+/* logo de la web */
+
+#logo{
+	text-decoration:none;
+	font-size: 19px;
+	color: black;
+	transition-duration: 0.5s;
+}
+
+#logo:hover{
+	letter-spacing: 0.5px;
+	transition-duration: 0.5s;
+}
+
+
+/* area principal */
+
+#middle{
+	margin-top: 80px;
+	color:white;
+}
+
+
+/* Area del carrito */
+
+#carrito1{
+	margin-top: 60px;
+	color: white;
+}
+
+
+
+
+
+/* opciones */ 
+
+.option{
+	opacity: 0.7;
+	color:white;
+	background-color: transparent;
+	border-color: transparent;
+	font-size: 19px;
+	transition-duration: 0.3s;
+}
+
+.option:hover{
+	opacity: 1;
+	transition-duration: 0.3s;
+}
+
+
+/* menu de compras */
+
+#menu{
+	margin-top: 150px;
+	margin-bottom: auto;
+
+}
+
+/* Selector de tipos de productos */ 
+
+.sectionTipo{
+
+}
+
+/* imagen opcion */
+
+.imagenOption{
+	cursor: pointer;
+	border-radius: 4px;
+	opacity: 1;
+	transition-duration: 0.8s;
+}
+
+.imagenOption:hover{
+	opacity: 0.6;
+	transition-duration: 0.6s;
+}
+
+.tituloImg{
+	font-size: 19px;
+	color: white;
+}
+
+
+/* areas de productos */
+
+#areaOrdenadores{
+	margin-top: 90px;
+}
+
+#areaPortatiles{
+	margin-top: 90px;
+}
+
+
+#areaAccesorios{
+	margin-top: 90px;
+}
+
+/* menus de producto */
+
+.menuProducto{
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 150px;
+}
