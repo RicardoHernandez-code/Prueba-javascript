@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<!--      -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+	
+	<!-- Div que contiene todas las secciones -->
+	<div class="container-fluid" id="areaPrincipal">
+		
+		<!-- Header con opciones del menu  -->
+		<div class="row"></div>
+
+		<div class="row" id="header">
+			<!-- logo-->
+			<div class="col-sm-6"><a href="#" id="logo">TecnoStore</a></div>
+
+			<!-- Opciones -->
+			<div class="col-sm-2"><button id="comprar" class="option">Comprar</button></div>	
+			<div class="col-sm-3"><button id="btnCarrito"class="option">Carrito de compras</button></div>
+		</div>
+
+		<div class="row" id="middle">
+			<div class="col-lg-12 d-flex justify-content-center">
+				<h1 style="font-family:  font-family: 'Quicksand', sans-serif;">Descubre un nuevo mundo</h1>
+			</div>
+			<div class="col-lg-12 d-flex justify-content-center">
+				<iframe id="video" src="https://www.youtube-nocookie.com/embed/tUP5S4YdEJo?color=white" width="560" height="315" frameborder="0"></iframe>
+			</div>
+		</div>
+
+
+
+			<!-- area de compras -->
+
+		<div class="row" id="menu">
+				<div class="col text-center sectionTipo">
+					<img id="opcionOrdenadores" class="imagenOption" src="https://bit.ly/3aNaWe9" alt="" width="250px" height="180px">
+					<br>
+					<p class="tituloImg">Ordenadores</p>
+				</div>
+				<div class="col  text-center sectionTipo">
+					<img id="opcionPortatiles" class="imagenOption" src="https://bit.ly/2GvWLw7" alt="" width="250px" height="180px">
+					<br>
+					<p class="tituloImg">Dispositivos portátiles</p>
+				</div>
+				<div class="col  text-center sectionTipo">
+					<img id="opcionAccesorios" class="imagenOption" src="https://bit.ly/38KdYOn" alt="" width="250px" height="180px">
+					<br>
+					<p class="tituloImg">Accesorios</p>
+				</div>
+		</div>
+
+			<!-- Ordenadores -->
+
+			<div class="row" id="areaOrdenadores">
+				<div class="col"></div>
+				<div class="col">
+					<div class="menuProducto">
+						<b class="tituloProducto">Ordenador</b>
+						<br>
+						<input type="text" placeholder="Referencia" class="inputProducto" id="referenciaOrdenador">
+						<br>
+						<input type="text" placeholder="Marca" class="inputProducto" id="marcaOrdenador">
+						<br>
+						<input type="number" placeholder="Peso" class="inputProducto" id="pesoOrdenador">
+						<br>
+						<input type="number" placeholder="Precio" min="0" step="any" class="inputProducto" id="precioOrdenador">
+						<br>
+						<input type="text" placeholder="Procesador" class="inputProducto" id="procesadorOrdenador">
+						<br>
+						<input type="text" placeholder="Capacidad" class="inputProducto" id="capacidadOrdenador">
+						<br>
+						<input type="text" placeholder="RAM" class="inputProducto" id="ramOrdenador">
+						<br>
+						<input type="text" placeholder="Gráfica" class="inputProducto" id="graficaOrdenador">
+						<br>
+						<input type="text" placeholder="Sistema Operativo" class="inputProducto" id="soOrdenador">
+						<br>
+						<select  name="" id="tipoOrdenador">
+							<option value="0">Seleccione el tipo de ordenador</option>
+							<option value="sobremesa">Sobremesa</option>
+							<option value="portatil">Portátil</option>
+						</select>
+
+						<!-- Seccion sobremesa -->
+						
+						<div  id="menuSobremesa">
+							<b class="tituloProducto">Sobremesa</b>
+							<br>
+							<select name="" id="blueDvd">
+								<option value="0">Seleccione si es DVD o Blu-ray</option>
+								<option value="DVD">DVD</option>
+								<option value="BLU-RAY">Blu-ray</option>
+							</select>
+						</div>
+
+						<!-- Seccion portatil -->
+
+						<div id="menuPortatil">
+							<b class="tituloProducto">Portátil</b>
+							<br>
+							<input type="text" placeholder="Tamaño de la pantalla" class="inputProducto" id="tamanoPantallaPor">
+						</div>
+
+						<div id="areabotonOrdenador"><button type="button" id="botonOrdenador" class="anadirCarrito">Añadir al carrito</button></div>
+
+					</div>
+				</div>
+				<div class="col"></div>
+			</div>
+
+			<!-- Dispositivos portatiles -->
+
+			<div class="row" id="areaPortatiles">
+				<div class="col"></div>
+				<div class="col">
+					<div class="menuProducto">
+						<b class="tituloProducto">Dispositivo Portátil</b>
+						<br>
+						<input type="text" placeholder="Referencia" class="inputProducto" id="referenciaPortatil">
+						<br>
+						<input type="text" placeholder="Marca" class="inputProducto" id="marcaPortatil">
+						<br>
+						<input type="number" placeholder="Peso" class="inputProducto" id="pesoPortatil">
+						<br>
+						<input type="number" placeholder="Precio" min="0" step="any" class="inputProducto" id="precioPortatil">
+						<br>
+						<input type="text" placeholder="Procesador" class="inputProducto" id="procesadorPortatil">
+						<br>
+						<input type="text" placeholder="Capacidad" class="inputProducto" id="capacidadPortatil">
+						<br>
+						<input type="text" placeholder="RAM" class="inputProducto" id="ramPortatil">
+						<br>
+						<input type="text" placeholder="Sistema Operativo" class="inputProducto" id="soPortatil">
+						<br>
+						<select  name="" id="tipoPortatil">
+							<option value="0">Seleccione el tipo de portátil</option>
+							<option value="smartphone">Smartphone</option>
+							<option value="tablet">Tablet</option>
+						</select>
+
+						<!-- smartPhones -->
+						<div id="menuSmartphone">
+							<b class="tituloProducto">Smartphone</b>
+							<br>
+							<input type="text" placeholder="Tamaño de la pantalla" class="inputProducto" id="tamanoPantallaPhone">
+						</div>
+
+						<!-- tablets -->
+						<div id="menuTablets">
+							<b class="tituloProducto">Tablet</b>
+							<br>
+							<input type="text" placeholder="Tipo de conexion" class="inputProducto" id="tipoConexion">
+						</div>
+						<div id="areabotonPortatil"><button type="button" id="botonPortatil" class="anadirCarrito">Añadir al carrito</button></div>
+					</div>
+				</div>
+				<div class="col"></div>
+			</div>
+
+			<!-- Accesorios -->
+			
+			<div class="row" id="areaAccesorios">
+				<div class="col"></div>
+				<div class="col">
+					<div class="menuProducto">
+						<b class="tituloProducto">Accesorios</b>
+						<br>
+						<input type="text" placeholder="Referencia" class="inputProducto" id="referenciaAccesorio">
+						<br>
+						<input type="text" placeholder="Marca" class="inputProducto" id="marcaAccesorio">
+						<br>
+						<input type="number" placeholder="Peso" class="inputProducto" id="pesoAccesorio">
+						<br>
+						<input type="number" placeholder="Precio" min="0" step="any" class="inputProducto" id="precioAccesorio">
+						<br>
+						<select  name="" id="tipoAccesorio">
+							<option value="0">Seleccione el tipo de accesorio</option>
+							<option value="cable">Cable</option>
+							<option value="cargador">Cargador</option>
+							<option value="raton">Ratón</option>
+							<option value="pantalla">Pantalla</option>
+						</select>
+
+						<!-- Cargadores -->
+						<div id="menuCargadores">
+							<b class="tituloProducto">Cargador</b>
+							<br>
+							<input type="text" placeholder="Amperaje" class="inputProducto" id="amperaje">
+							<br>
+							<input type="text" placeholder="Voltaje" class="inputProducto" id="voltaje">
+						</div>
+
+						<!-- Ratones -->
+						<div id="menuRatones">
+							<b class="tituloProducto">Ratón</b>
+							<br>
+							<select name="" id="tipoRaton">
+								<option value="0">Seleccione un tipo de Ratón</option>
+								<option value="wireless">inalámbrico</option>
+								<option value="cable">USB Cable</option>
+							</select>
+						</div>
+						<div id="menuPantalla">
+							<b class="tituloProducto">Pantalla</b>
+							<br>
+							<input type="text" placeholder="Tamaño de pantalla" class="inputProducto" id="tamanoPantallaAccesorio">
+						</div>
+						<div id="areabotonAccesorio"><button type="button" id="botonAccesorio" class="anadirCarrito">Añadir al carrito</button></div>
+					</div>
+				</div>
+				<div class="col"></div>
+			</div>
+
+			<!-- Area del carrito de compras -->
+			<div class="row text-center" id="carrito1">
+				<div class="col">
+					<div>
+					<h1>Carrito de compras</h1><br>
+					<p id="cantidadProductos" class="campoCarrito"></p><br>
+					<p id="precioCampo" class="campoCarrito"></p><br>
+					<p id="precioIvaCampo" class="campoCarrito"></p><br>
+					<p id="pesoCampo"></p>
+					<p id="precioEnvioCampo" class="campoCarrito"></p><br>
+					</div>
+				</div>
+				
+			</div>
+</div>
+
+<!-- script de la super clase, seguido del resto de las otras clases -->
+<script type="text/javascript" src="Producto.js"></script>
+
+<!-- Ordenador -->
+<script type="text/javascript" src="Ordenador.js"></script>
+<script type="text/javascript" src="Portatil.js"></script>
+<script type="text/javascript" src="Sobremesa.js"></script>
+
+<!-- Dispositivos portatiles -->
+<script type="text/javascript" src="DispositivoPortatil.js"></script>
+<script type="text/javascript" src="Tablet.js"></script>
+<script type="text/javascript" src="Smartphone.js"></script>
+
+<!-- Accesorios -->
+<script type="text/javascript" src="Accesorio.js"></script>
+<script type="text/javascript" src="Pantalla.js"></script>
+<script type="text/javascript" src="Cable.js"></script>
+<script type="text/javascript" src="Cargador.js"></script>
+<script type="text/javascript" src="Raton.js"></script>
+
+<!-- script de funciones de carrito -->
+<script type="text/javascript" src="programa.js"></script>
+
+
+<!-- script encargado de mostrar o esconder secciones -->
+<script type="text/javascript" src="display.js"></script>
+</body>
+</html>
